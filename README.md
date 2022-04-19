@@ -1,3 +1,1 @@
-# movie_guide
-
-<h1 align="center"> Seu título aqui </h1>
+<h1 align="center"> Movie Guide </h1>
