@@ -2,44 +2,45 @@ const $ = document.querySelector.bind(document)
 
 //Tabs laterais
 function openGuide(evt, universeName) {
-    // Declarando todas as variáveis
+    // Declara as variáveis
     var i, tabcontent, tablinks;
   
-    // Pega todos os elementos com class="tabcontent" e oculta-os
+    // Pega todos os elementos com class="tabcontent" e oculta
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Pega todos os elementos com class="tablinks" e remove a classe "active"
+    // Pega todos os elementos com class="tablinks" e remova a classe "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    // Mostra a aba atual e adiciona uma classe "ativa" ao link que abriu a aba
+    // Mostra a aba atual e adiciona uma classe "active" ao link que abriu a aba
     document.getElementById(universeName).style.display = "block";
+    
     evt.currentTarget.className += " active";
 }  
 
-//Tabs horizontais
-function TabNavigation(){
-  
+//Tabs superiores
+function TabNavigation(type){
+
     const html = {
         //Pegando os filhos das classes tab-links e tab-content
-        links: [...$('.tab-links').children],
-        contents: [...$('.tab-content').children],
+        links: [...$('#'+type).getElementsByClassName('tab-links')[0].children],
+        contents: [...$('#'+type).getElementsByClassName('tab-content')[0].children],
         //Pegando a classe data-open para dar click
-        openTab: $('[data-open]')
+        openTab: $('#'+type).querySelectorAll('[data-open]')[0]
     }
 
-    //Esconde os conteúdos das abas não ativas 
+    //Esconde os conteúdos das abas não ativas
     function hideAllTabContent(){
         html.contents.forEach(section => {
         section.style.display = "none"
        })
     }
-    
+
     //Remove o class active de todas as classes
     function removeAllActiveClass(){
         html.links.forEach(tab => {
@@ -85,8 +86,8 @@ function TabNavigation(){
 }
 
 window.addEventListener('load', () =>{
-    const tabNavigation = TabNavigation()
-    
+    tabNavigation = TabNavigation('Marvel')
     tabNavigation.init()
-        
+    tabNavigation = TabNavigation('dc')
+    tabNavigation.init()   
 })
