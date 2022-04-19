@@ -1,4 +1,4 @@
-<h1 align="center"> Movie Guide </h1>
+<h1> Movie Guide </h1>
 
 <p></p>
 🚧 Projeto em construção 🚧
