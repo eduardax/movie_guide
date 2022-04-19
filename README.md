@@ -2,7 +2,7 @@
 
 <p></p>
 
-🚧 Projeto em construção 🚧
+🚧 Projeto funcionando mas em construção 🚧
 
 ## ✔️ Tecnologias utilizadas
 
