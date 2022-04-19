@@ -1,4 +1,11 @@
-# movie_guide
+<h1> Movie Guide </h1>
 
-Meu repositório Git ==================== 
-Apenas repositório Git
+<p></p>
+
+🚧 Projeto em construção 🚧
+
+## ✔️ Tecnologias utilizadas
+
+- ``HTML``
+- ``CSS``
+- ``JavaScript``
