@@ -4,7 +4,7 @@
 
 🚧 Projeto em construção 🚧
 
-## ✔️ Técnicas e tecnologias utilizadas
+## ✔️ Tecnologias utilizadas
 
 - ``HTML``
 - ``CSS``
