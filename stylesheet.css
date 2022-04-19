@@ -129,16 +129,7 @@ header {
     height: 100%;
 }
 
-.tabContent {
-    float: left;
-    padding: 10% 18%;
-    width: 94%;
-    border-left: none;
-    height: 100%;
-}
-
-/*Fim nav lateral
-*/
+/*Fim nav lateral*/
 
 button {
     color: white;
