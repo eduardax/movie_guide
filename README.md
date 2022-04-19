@@ -7,4 +7,4 @@
 
 - ``HTML``
 - ``CSS``
-- ``JavaScript`
+- ``JavaScript``
