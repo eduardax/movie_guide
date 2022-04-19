@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Guia de Filmes</title>
+        <script type="text/javascript" src="app.js"></script>
+        <link rel="icon" type="image/x-icon" href="./img/popcorn.svg">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+    </head>
+
+    <body>
+      <header>
+        <img src="./img/popcorn.svg" id="btnMenu">
+      </header>
+        
+      <nav class="menu"> 
+        <div class="tab">
+          <button class="tablinks active" onclick="openGuide(event, 'Marvel')"><img src="./img/marvel.png" width="50" height="50"></button>
+          <button class="tablinks" onclick="openGuide(event, 'dc')"><img src="./img/dc.png" width="50" height="50"></button>
+        </div>
+        
+        <div id="Marvel" class="tabcontent">
+          <div>
+            <div id="tabs">
+                <div class="tab-links">
+                  <button data-id="vingadores" data-open>Vingadores</button>
+                  <button data-id="dr-estranho">Doutor Estranho</button>
+                  <button data-id="viuva-negra">Viúva Negra</button>
+                  <button data-id="capita-marvel">Capitã Marvel</button>
+                  <button data-id="homem-ferro">Homem de Ferro</button>
+                </div>
+          
+                <div class="tab-content">
+                  <section id="vingadores">
+                        <div class="metade-um">
+                            <img class="filme-img" src="img/vingadoers.jpg">
+                        </div>
+                        <div class="metade-dois">
+                            <h2>Vingadores</h2>
+                            <p>Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes.</p>
+                            <p><b>Duração:</b> 2h 23m</p>
+                          </div>
+                  </section>
+                  <section id="dr-estranho">
+                    <div class="metade-um">
+                        <img class="filme-img" src="img/estranho-feiticeira.jpg">
+                    </div>
+                    <div class="metade-dois">
+                        <h2>Dr. Estranho</h2>
+                        <p>Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.</p>
+                        <p><b>Duração:</b> 1h 55m</p>
+                      </div>
+                  </section>
+                  <section id="viuva-negra">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/viuva-negra.jpg">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Viúva Negra</h2>
+                      <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</p>
+                      <p><b>Duração:</b> 2h 13m</p>
+                    </div>
+                  </section>
+                  <section id="capita-marvel">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/capitã-marvel.jpg">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Capitã Marvel</h2>
+                      <p>Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls. Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem memórias recorrentes de uma outra vida, como Carol Danvers, agente da Força Aérea norte-americana. Com a ajuda de Nick Fury, Capitã Marvel precisa descobrir os segredos de seu passado e pôr um fim ao conflito intergalático com os Skrulls.</p>
+                      <p><b>Duração:</b> 2h 4m</p>
+                    </div>
+                  </section>
+                  <section id="homem-ferro">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/homem-ferro.jpg">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Homem de Ferro</h2>
+                      <p>Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores. Ao voltar para os EUA, Stark aprimora a armadura e a utiliza para combater o crime.</p>
+                      <p><b>Duração:</b> 2h 6m</p>
+                    </div>
+                  </section>
+                </div>   
+              </div>
+            </div>       
+        </div>
+        
+        <div id="dc" class="tabcontent">
+          <div>
+            <div id="tabs">
+                <div class="tab-links">
+                  <button data-id="batman" data-open>Batman</button>
+                  <button data-id="mulher-maravilha">Mulher Maravilha</button>
+                  <button data-id="coringa">Coringa</button>
+                  <button data-id="esquadrao-suicida">Esquadrão Suicida</button>
+                  <button data-id="liga-justica">Liga da Justiça</button>
+                </div>
+          
+                <div class="tab-content">
+                  <section id="batman">
+                        <div class="metade-um">
+                            <img class="filme-img" src="img/batman.jpg">
+                        </div>
+                        <div class="metade-dois">
+                            <h2>Batman</h2>
+                            <p>Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.</p>
+                        </div>
+                  </section>
+                  <section id="mulher-maravilha">
+                    <div class="metade-um">
+                        <img class="filme-img" src="img/ww84.jpg">
+                    </div>
+                    <div class="metade-dois">
+                        <h2>DMulher Maravilha</h2>
+                        <p>Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.</p>
+                    </div>
+                  </section>
+                  <section id="coringa">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/joker.jpg">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Coringa</h2>
+                      <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</p>
+                    </div>
+                  </section>
+                  <section id="esquadrao-suicida">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/suicide-squad.jpg">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Esquadrão Suicida</h2>
+                      <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</p>
+                    </div>
+                  </section>
+                  <section id="liga-justica">
+                    <div class="metade-um">
+                      <img class="filme-img" src="img/justice-ligue.png">
+                    </div>
+                    <div class="metade-dois">
+                      <h2>Liga da Justiça</h2>
+                      <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</p>
+                    </div>
+                  </section>
+                </div>   
+            </div>
+          </div>  
+        </div>
+
+      </nav>
+
+    </body>
+
+</html>
